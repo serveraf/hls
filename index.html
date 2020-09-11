@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test HLS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/video.js@7.8.4/dist/video-js.min.css" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        #player {
+            top: 0;
+            left: 0;
+            position: absolute;
+            height: 100% !important;
+            width: 100% !important;
+        }
+    </style>
+</head>
+<body>
+    <video id="player" class="video-js" playsinline controls data-setup='{}'>
+        <source src="https://serveraf.github.io/hls/test.m3u8" type="application/x-mpegURL">
+    </video>
+    <script src="https://cdn.jsdelivr.net/npm/video.js@7.8.4/dist/video.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@videojs/http-streaming@1.13.4/dist/videojs-http-streaming.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
